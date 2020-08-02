@@ -1,15 +1,15 @@
 (() => {
-  let audio = document.querySelector('audio'),
-      playButton = document.querySelector('.controls button');
+    let audio = document.querySelector('audio'),
+        playButton = document.querySelector('.controls button');
 
-  function playAudio() {
-    document.querySelectorAll('path').forEach(path => path.classList.add('text-anim'));
-    document.querySelector("#lung_shot").classList.add('container-turn');
-    
-    audio.play();
-  }
+    function playAudio() {
+        document.querySelectorAll('path').forEach(path => path.classList.add('text-anim'));
+        document.querySelector("#lung_shot").classList.add('container-turn');
+
+        audio.play();
+    }
 
 
-  playButton.addEventListener("click", playAudio);
+    playButton.addEventListener("click", playAudio);
 
 })();
